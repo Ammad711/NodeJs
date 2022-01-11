@@ -1,0 +1,78 @@
+Frontend is client side.
+Backend is server side.
+NodeJs is javascript for backend.
+NodeJs most important advantage is we have to only learn javascript. It is useful as we can do frontend and 
+backend both using javascript.
+Chrome used v8 engine to run javascript. Ryan Dahl combined v8 engine and C++ both to making node.exe.
+This could be used anywhere as backend and frontend.
+NodeJs is runtime environment for running javascript on server.
+NodeJs works on asynchronous non-blocking I/O Model.
+It can be used to run python, javascript, etc. on server.
+It makes react and angular easy to learn.
+Single thread can handle multiple requests thats why it is mostly used in chat applications, real time 
+applications, etc..
+asynchronous I/O (also non-sequential I/O) is a form of input/output processing that permits other processing 
+to continue before the transmission has finished.
+npm is similar to pip in python.
+npm is used to install packages.
+npm init is used to initialize project as a node project.
+Express, angular, react, etc. are packages for nodejs. Packages are all javascript codes already written.
+package-lock.json has all dependency tree.
+package.json has all dependencies.
+Dev dependencies are modules which are only required during development whereas dependencies are required at 
+runtime.
+Whenever module is run in nodejs it automatically puts it in function(exports,require,module,__filename,
+__dirname){}
+on google search nodejs docs.
+Modules: ECMAScript modules
+***************************
+ECMAScript modules are the official standard format to package JavaScript code for reuse. Modules are defined using a variety of import and export statements.
+
+The following example of an ES module exports a function:
+
+// addTwo.mjs
+function addTwo(num) {
+  return num + 2;
+}
+
+export { addTwo };
+The following example of an ES module imports the function from addTwo.mjs:
+
+// app.mjs
+import { addTwo } from './addTwo.mjs';
+
+// Prints: 6
+console.log(addTwo(4));
+
+Modules: CommonJS modules
+*************************
+In the Node.js module system, each file is treated as a separate module. For example, consider a file named foo.js:
+
+const circle = require('./circle.js');
+console.log(`The area of a circle of radius 4 is ${circle.area(4)}`);
+On the first line, foo.js loads the module circle.js that is in the same directory as foo.js.
+
+Here are the contents of circle.js:
+
+const { PI } = Math;
+
+exports.area = (r) => PI * r ** 2;
+
+exports.circumference = (r) => 2 * PI * r;
+
+.mjs module is for es6 module.
+
+1:18:40
+
+
+
+
+
+
+
+
+
+
+
+
+ 
